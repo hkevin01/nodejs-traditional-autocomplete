@@ -1,0 +1,50 @@
+{
+  "recommendations": [
+    // === ESSENTIAL DEVELOPMENT TOOLS ===
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    
+    // === NODE.JS AND JAVASCRIPT ===
+    "ms-vscode.js-debug",
+    "ms-vscode.vscode-json",
+    "ms-vscode.references-view",
+    
+    // === TESTING TOOLS ===
+    "vitest.explorer",
+    "ms-playwright.playwright",
+    
+    // === PRODUCTIVITY TOOLS ===
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    
+    // === GIT AND VERSION CONTROL ===
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    
+    // === UTILITY EXTENSIONS ===
+    "ms-vscode.hexdump",
+    "usernamehw.errorlens",
+    "gruntfuggly.todo-tree",
+    "streetsidesoftware.code-spell-checker",
+    "ms-vsliveshare.vsliveshare"
+  ],
+  "unwantedRecommendations": [
+    // === EXPLICITLY DISABLE AI/COPILOT EXTENSIONS ===
+    "github.copilot",
+    "github.copilot-nightly",
+    "github.copilot-chat",
+    "github.copilot-labs",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+    "ms-toolsai.vscode-jupyter-slideshow",
+    "tabnine.tabnine-vscode",
+    "visualstudioexptteam.vscodeintellicode",
+    "ms-python.isort"
+  ]
+}
