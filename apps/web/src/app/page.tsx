@@ -1,7 +1,7 @@
 'use client';
 
 import { Code2, Settings, Shield, Zap } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface Feature {
   icon: React.ReactNode;
@@ -36,7 +36,7 @@ export default function HomePage() {
   const [apiStatus, setApiStatus] = useState<'checking' | 'online' | 'offline'>('checking');
 
   // Check API status on mount
-  React.useEffect(() => {
+  useEffect(() => {
     const checkApiStatus = async () => {
       try {
         const response = await fetch('/api/health');
@@ -45,7 +45,7 @@ export default function HomePage() {
         } else {
           setApiStatus('offline');
         }
-      } catch (error) {
+      } catch {
         setApiStatus('offline');
       }
     };
@@ -184,6 +184,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-// Fix missing React import
-import React from 'react';
