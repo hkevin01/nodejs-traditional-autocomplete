@@ -1,3 +1,5 @@
+import { mkdirSync } from 'fs';
+
 import winston from 'winston';
 
 const { combine, timestamp, errors, printf, colorize, json } = winston.format;
@@ -70,7 +72,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // Create logs directory if it doesn't exist
-import { mkdirSync } from 'fs';
 try {
   mkdirSync('logs', { recursive: true });
 } catch (error) {

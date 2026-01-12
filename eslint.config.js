@@ -1,10 +1,10 @@
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import prettier from 'eslint-config-prettier';
+import importPlugin from 'eslint-plugin-import';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
-import jsxA11y from 'eslint-plugin-jsx-a11y';
-import importPlugin from 'eslint-plugin-import';
-import prettier from 'eslint-config-prettier';
+import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   // Ignores
@@ -17,6 +17,7 @@ export default tseslint.config(
       '**/coverage/**',
       '**/.turbo/**',
       '**/pnpm-lock.yaml',
+      '**/next-env.d.ts',
     ],
   },
 

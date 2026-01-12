@@ -5,9 +5,10 @@ import express from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import morgan from 'morgan';
-import { errorHandler } from './middleware/error-handler.js';
-import { notFoundHandler } from './middleware/not-found.js';
-import { apiRouter } from './routes/api.js';
+
+import { errorHandler } from './middleware/error-handler';
+import { notFoundHandler } from './middleware/not-found';
+import { apiRouter } from './routes/api';
 import { healthRouter } from './routes/health.js';
 import { logger } from './utils/logger.js';
 

@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import { ZodError } from 'zod';
-import { logger } from '../utils/logger.js';
+
+import { logger } from '../utils/logger';
 
 export interface ApiError extends Error {
   statusCode?: number;
@@ -11,7 +12,7 @@ export class CustomError extends Error implements ApiError {
   public readonly statusCode: number;
   public readonly isOperational: boolean;
 
-  constructor(message: string, statusCode: number = 500, isOperational: boolean = true) {
+  constructor(message: string, statusCode = 500, isOperational = true) {
     super(message);
     this.statusCode = statusCode;
     this.isOperational = isOperational;
@@ -118,37 +119,37 @@ export function asyncHandler(
 
 // Create specific error types
 export class NotFoundError extends CustomError {
-  constructor(message: string = 'Resource not found') {
+  constructor(message = 'Resource not found') {
     super(message, 404);
   }
 }
 
 export class ValidationError extends CustomError {
-  constructor(message: string = 'Validation failed') {
+  constructor(message = 'Validation failed') {
     super(message, 400);
   }
 }
 
 export class UnauthorizedError extends CustomError {
-  constructor(message: string = 'Unauthorized') {
+  constructor(message = 'Unauthorized') {
     super(message, 401);
   }
 }
 
 export class ForbiddenError extends CustomError {
-  constructor(message: string = 'Forbidden') {
+  constructor(message = 'Forbidden') {
     super(message, 403);
   }
 }
 
 export class ConflictError extends CustomError {
-  constructor(message: string = 'Conflict') {
+  constructor(message = 'Conflict') {
     super(message, 409);
   }
 }
 
 export class TooManyRequestsError extends CustomError {
-  constructor(message: string = 'Too many requests') {
+  constructor(message = 'Too many requests') {
     super(message, 429);
   }
 }

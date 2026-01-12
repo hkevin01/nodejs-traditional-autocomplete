@@ -1,6 +1,7 @@
 import express, { Router } from 'express';
 import { z } from 'zod';
-import { logger } from '../utils/logger.js';
+
+import { logger } from '../utils/logger';
 
 const router: express.Router = Router();
 
@@ -126,7 +127,7 @@ function generateTraditionalSuggestions(
   query: string, 
   language: string, 
   maxResults: number
-): Array<{ label: string; kind: string; detail?: string; documentation?: string }> {
+): { label: string; kind: string; detail?: string; documentation?: string }[] {
   // This is a simplified example - in a real implementation,
   // this would integrate with the TypeScript language server
   const commonSuggestions = {

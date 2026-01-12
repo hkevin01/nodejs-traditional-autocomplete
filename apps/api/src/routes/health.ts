@@ -1,6 +1,8 @@
-import express, { Router } from 'express';
 import os from 'os';
-import { logger } from '../utils/logger.js';
+
+import express, { Router } from 'express';
+
+import { logger } from '../utils/logger';
 
 const router: express.Router = Router();
 
