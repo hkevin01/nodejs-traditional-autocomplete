@@ -71,7 +71,7 @@
   "editor.suggest.showSnippets": true,
   "editor.suggest.showUsers": true,
   "editor.suggest.showIssues": true,
-  "editor.hover.enabled": true,
+  "editor.hover.enabled": "on",
   "editor.hover.delay": 300,
   "editor.hover.sticky": true,
   
