@@ -26,7 +26,17 @@
         "prepare": "husky",
         "db:generate": "pnpm --filter api prisma generate",
         "db:push": "pnpm --filter api prisma db push",
-        "db:studio": "pnpm --filter api prisma studio"
+        "db:studio": "pnpm --filter api prisma studio",
+        "jupyter:setup": "cd interviewing && ./scripts/setup_jupyter_demo.sh",
+        "jupyter:start": "cd interviewing && ./scripts/start_jupyter_demo.sh",
+        "demo:setup": "pnpm jupyter:setup",
+        "demo:start": "pnpm jupyter:start",
+        "demo:nodejs": "cd interviewing/demos && node hello-world-nodejs.mjs",
+        "demo:react": "cd interviewing/demos && echo '📋 React demo - see hello-world-react.jsx for component code'",
+        "demo:run": "cd interviewing/demos && ./run-demos.sh",
+        "demo:interactive": "cd interviewing/demos && ./run-demos.sh --interactive",
+        "demo:all": "cd interviewing/demos && ./run-demos.sh all",
+        "interview:ready": "pnpm jupyter:setup && echo '🎯 Interview environment ready! Run: pnpm demo:start'"
     },
     "devDependencies": {
         "@playwright/test": "^1.49.0",

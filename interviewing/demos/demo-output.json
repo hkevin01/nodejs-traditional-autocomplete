@@ -1,0 +1,12 @@
+{
+  "message": "Hello from Node.js ES Modules!",
+  "timestamp": "2026-01-13T15:39:20.813Z",
+  "features": [
+    "ES Modules (import/export)",
+    "Async/Await Pattern",
+    "Modern JavaScript Syntax",
+    "Professional Error Handling"
+  ],
+  "nodeVersion": "v22.21.0",
+  "platform": "linux"
+}
