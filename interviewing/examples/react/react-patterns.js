@@ -1,5 +1,5 @@
-// React Patterns in Quokka.js
-// Start Quokka: Ctrl+Shift+P -> "Quokka.js: Start on Current File"
+// React Patterns with Code Runner
+// Right-click: "Run Code" or Ctrl+Alt+N
 // These are React concepts demonstrated with plain JavaScript
 
 // 1. Component State Pattern (simulated)

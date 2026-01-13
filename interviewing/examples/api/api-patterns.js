@@ -1,5 +1,5 @@
-// API Patterns in Quokka.js
-// Start Quokka: Ctrl+Shift+P -> "Quokka.js: Start on Current File"
+// API Patterns with Code Runner
+// Right-click: "Run Code" or Ctrl+Alt+N
 // Learn API concepts with instant feedback!
 
 // 1. HTTP Methods Simulation

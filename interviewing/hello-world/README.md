@@ -1,13 +1,13 @@
-# 🚀 Quokka.js Live Coding Examples
+# 🚀 Code Runner JavaScript Examples
 
-**Instant feedback JavaScript and React patterns!**
+**Simple execution JavaScript and React patterns!**
 
 ## ⚡ Quick Start
 
 1. **Open any .js file in this folder**
-2. **Press Ctrl+Shift+P**
-3. **Type "Quokka.js: Start on Current File"**
-4. **Watch results appear inline as you type!** ✨
+2. **Right-click in editor**
+3. **Select "Run Code"** (or press Ctrl+Alt+N)
+4. **Check OUTPUT panel for results!** ✨
 
 ## 📁 Files
 
@@ -37,11 +37,11 @@
 
 ## 🎯 How to Use
 
-### Method 1: Quokka.js (Recommended)
+### Method 1: Code Runner (Recommended)
 ```
 1. Open hello-world-nodejs.js or hello-world-react.js
-2. Ctrl+Shift+P → "Quokka.js: Start on Current File" 
-3. Edit any values and watch results update instantly!
+2. Right-click → "Run Code" (or Ctrl+Alt+N)
+3. Check OUTPUT panel for results!
 ```
 
 ### Method 2: Traditional Execution
@@ -66,7 +66,7 @@ node
 ## ✨ What Makes This Special
 
 - **Zero Configuration** - No npm, no setup, no complexity
-- **Instant Feedback** - See results as you type
+- **Simple Execution** - Right-click and run
 - **Pure JavaScript** - No framework overhead
 - **Educational** - Perfect for learning and experimentation
 - **Traditional Autocomplete** - Full VS Code IntelliSense support
@@ -87,11 +87,11 @@ node
 
 ## 💡 Tips
 
-- **Quokka shows results inline** - Look for the comments next to your code
-- **Console.log everything** - Quokka displays all console output
-- **Experiment freely** - Changes are instant, no need to save/run
+- **Check OUTPUT panel** - All console.log results appear there
+- **Console.log everything** - Code Runner displays all console output
+- **Experiment freely** - Edit and re-run to see changes
 - **VS Code autocomplete works perfectly** - Full IntelliSense support
 
 ---
 
-**This is the perfect middle ground between notebook-style coding and traditional development!** 🎯
+**This is simple, clean JavaScript execution without any complexity!** 🎯

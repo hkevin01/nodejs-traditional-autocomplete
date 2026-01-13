@@ -1,6 +1,6 @@
-// Welcome to Quokka.js Live JavaScript!
-// Press Ctrl+Shift+P -> "Quokka.js: Start on Current File"
-// Watch the magic happen as you type! ✨
+// 🚀 Live JavaScript Demonstration with Code Runner
+// Right-click → "Run Code" or press Ctrl+Alt+N
+// Check OUTPUT panel for results! ✨
 
 console.log('👋 Hello World!'); 
 // 👆 Result appears inline as you type!
@@ -76,4 +76,4 @@ console.log('🔢 Random Int:', randomInt);
 console.log('🎯 Dice Roll:', dice);
 
 // Try changing any values above and watch the results update instantly!
-// This is the power of Quokka.js - immediate feedback without any setup!
+// This is the power of Code Runner - simple execution without any setup!

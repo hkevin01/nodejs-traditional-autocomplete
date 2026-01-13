@@ -1,16 +1,16 @@
 # JavaScript Live Coding Environment
 
-> **Quokka.js + Node REPL + Traditional Autocomplete**
+> **Code Runner + Node REPL + Traditional Autocomplete**
 > 
 > Instant feedback JavaScript learning environment - no npm, no config, just code!
 
 ## ⚡ Quick Start
 
-### Option 1: Quokka.js (Recommended)
+### Option 1: Code Runner (Recommended)
 ```bash
 # 1. Open any .js file in VS Code
 # 2. Press Ctrl+Shift+P
-# 3. Type "Quokka.js: Start on Current File"
+# 3. Right-click → "Run Code" (or Ctrl+Alt+N)
 # 4. Watch results appear inline as you type! ✨
 ```
 
@@ -29,7 +29,7 @@ node -e "console.log('Hello World!')"
 interviewing/
 ├── examples/
 │   ├── basic/
-│   │   ├── quokka-demo.js      # Live JavaScript with Quokka
+│   │   ├── node-repl-guide.js  # Node.js REPL examples
 │   │   ├── node-repl-guide.js  # Node REPL examples  
 │   │   └── hello-world.js      # Traditional execution
 │   ├── react/
@@ -43,9 +43,9 @@ interviewing/
 
 ## ⚡ Live Coding Examples
 
-### 1. Quokka.js Live JavaScript
-**File**: `examples/basic/quokka-demo.js`
-- **Start**: Ctrl+Shift+P → "Quokka.js: Start on Current File"
+### 1. Code Runner JavaScript
+**File**: `examples/basic/node-repl-guide.js`
+- **Start**: Right-click → "Run Code" (or Ctrl+Alt+N)
 - Platform information with live updates
 - Calculations that update as you type
 - String manipulation with instant results
@@ -59,7 +59,7 @@ interviewing/
 - Validation logic
 - Event handler patterns
 - Props and list rendering
-- All demonstrated in plain JavaScript with Quokka!
+- All demonstrated in plain JavaScript with Code Runner!
 
 ### 3. API Development Patterns
 **File**: `examples/api/api-patterns.js`
@@ -88,18 +88,18 @@ interviewing/
 
 | Method | Usage | Benefits |
 |--------|--------|----------|
-| **Quokka.js** | Open .js file → Start Quokka | Live inline results, no setup |
+| **Code Runner** | Open .js file → Right-click → Run Code | Simple execution, no setup |
 | **Node REPL** | Type `node` in terminal | Interactive session, instant feedback |  
 | **Direct execution** | `node filename.js` | Traditional execution |
 | **Browser** | Open HTML files directly | React demos without server |
 
-## ⚡ Quokka.js Features
+## ⚡ Code Runner Features
 
-### Instant Visual Feedback
-- Results appear next to your code as you type
-- No need to save files or run commands
+### Simple Execution
+- Right-click → "Run Code" for instant results
+- Keyboard shortcut: Ctrl+Alt+N
+- Results appear in OUTPUT panel
 - Perfect for experimentation and learning
-- Shows variable values, function results, console output
 
 ### Zero Configuration
 - No npm install required
@@ -122,7 +122,7 @@ interviewing/
 - Pure JavaScript files that just work
 
 ### ✅ Live Feedback Options
-- **Quokka.js**: Results inline as you type
+- **Code Runner**: Right-click execution with OUTPUT panel
 - **Node REPL**: Interactive command-line session  
 - **Direct execution**: Traditional file running
 - **Browser**: Instant HTML/React demos
@@ -135,10 +135,10 @@ interviewing/
 
 ## 🚀 Getting Started Guide
 
-1. **Try Quokka.js:**
-   - Open `examples/basic/quokka-demo.js`
-   - Press Ctrl+Shift+P → "Quokka.js: Start on Current File"
-   - Modify any values and watch results update instantly!
+1. **Try Code Runner:**
+   - Open `examples/basic/live-demo.js`
+   - Right-click → "Run Code" (or Ctrl+Alt+N)
+   - Check OUTPUT panel for results!
 
 2. **Experiment with Node REPL:**
    ```bash
@@ -155,17 +155,17 @@ interviewing/
 
 3. **Explore React Patterns:**
    - Open `examples/react/react-patterns.js`
-   - Start Quokka to see React concepts in plain JavaScript
+   - Right-click → "Run Code" to see React concepts in plain JavaScript
    - Or open `examples/react/form-demo.html` in browser for full React demo
 
 4. **Learn API Patterns:**
    - Open `examples/api/api-patterns.js`
-   - Start Quokka to see RESTful API patterns
+   - Right-click → "Run Code" to see RESTful API patterns
    - No server required - just pure JavaScript demonstrations
 
 ## 📚 Learning Path
 
-1. **Start with Quokka basics** - `examples/basic/quokka-demo.js`
+1. **Start with Code Runner basics** - `examples/basic/live-demo.js`
 2. **Try Node REPL** - Interactive experimentation
 3. **Explore React patterns** - `examples/react/react-patterns.js`  
 4. **Learn API concepts** - `examples/api/api-patterns.js`

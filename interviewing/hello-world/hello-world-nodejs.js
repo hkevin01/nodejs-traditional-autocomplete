@@ -1,5 +1,5 @@
-// 🚀 Node.js Hello World for Quokka.js
-// Press Ctrl+Shift+P → "Quokka.js: Start on Current File"
+// 🚀 Node.js Hello World for Code Runner
+// Right-click → "Run Code" or press Ctrl+Alt+N
 // Watch the magic happen! ✨
 
 // Basic Hello World
@@ -38,7 +38,7 @@ console.log(`🥇 First: ${firstFruit}`);
 console.log(`🥉 Last: ${lastFruit}`);
 
 // String Operations
-const message = 'Hello Quokka!';
+const message = 'Hello Code Runner!';
 const reversed = message.split('').reverse().join('');
 const uppercase = message.toUpperCase();
 const wordCount = message.split(' ').length;
@@ -67,5 +67,5 @@ console.log(`🎲 Random float: ${randomFloat.toFixed(4)}`);
 console.log(`🔢 Random int (0-99): ${randomInt}`);
 console.log(`🎯 Dice roll: ${diceRoll}`);
 
-// Try changing any values above and watch the results update instantly!
-// This is the power of Quokka.js - immediate feedback! 🎉
+// Try changing any values above and re-run to see results!
+// This is the power of Code Runner - simple execution! 🎉

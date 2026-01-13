@@ -1,6 +1,6 @@
-// ⚛️ React Hello World Patterns for Quokka.js
-// Press Ctrl+Shift+P → "Quokka.js: Start on Current File"
-// Learn React concepts with instant feedback! ✨
+// ⚛️ React Hello World Patterns for Code Runner
+// Right-click → "Run Code" or press Ctrl+Alt+N
+// Learn React concepts with execution! ✨
 
 // 1. Basic Component Structure (Simulated)
 function HelloWorld(props) {
@@ -112,7 +112,7 @@ console.log('🎴 Card Component:', cardComponent);
 // 5. List Rendering Pattern
 const todos = [
   { id: 1, text: 'Learn React', completed: true },
-  { id: 2, text: 'Try Quokka.js', completed: true },
+  { id: 2, text: 'Try Code Runner', completed: true },
   { id: 3, text: 'Build something awesome', completed: false }
 ];
 
@@ -198,7 +198,7 @@ function App() {
     props: {
       className: 'app',
       children: [
-        HelloWorld({ name: 'Quokka User' }),
+        HelloWorld({ name: 'Code Runner User' }),
         cardComponent,
         todoComponent,
         WelcomeMessage(true, 'React Developer')
@@ -210,5 +210,5 @@ function App() {
 const appComponent = App();
 console.log('🚀 Complete App:', appComponent);
 
-// Try modifying any values above and see instant React pattern demonstrations!
+// Try modifying any values above and re-run to see React pattern demonstrations!
 // This shows React concepts without needing the actual React library! 🎯

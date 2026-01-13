@@ -1,5 +1,5 @@
 // Node.js REPL Quick Reference
-// Alternative to Quokka: Use Node.js REPL directly!
+// Alternative to Code Runner: Use Node.js REPL directly!
 // Run: node (then paste code line by line)
 // Or: node -e "console.log('Hello World!')"
 
@@ -94,4 +94,4 @@ for (let i = 1; i <= 5; i++) {
 */
 
 // This file demonstrates what you can do in Node REPL
-// REPL gives you immediate feedback like Quokka, but line by line!
+// REPL gives you immediate feedback like Code Runner, but line by line!
