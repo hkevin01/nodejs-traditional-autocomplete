@@ -1,0 +1,17 @@
+# Local VS Code settings for this directory
+.vscode/
+
+# Python virtual environment
+.venv/
+.python-version
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Demo outputs
+demo-output.json
