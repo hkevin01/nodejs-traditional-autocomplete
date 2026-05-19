@@ -86,12 +86,12 @@ interviewing/
 
 ## 🛠️ No Configuration Required
 
-| Method | Usage | Benefits |
+| <sub>Method</sub> | <sub>Usage</sub> | <sub>Benefits</sub> |
 |--------|--------|----------|
-| **Code Runner** | Open .js file → Right-click → Run Code | Simple execution, no setup |
-| **Node REPL** | Type `node` in terminal | Interactive session, instant feedback |  
-| **Direct execution** | `node filename.js` | Traditional execution |
-| **Browser** | Open HTML files directly | React demos without server |
+| <sub>**Code Runner**</sub> | <sub>Open .js file → Right-click → Run Code</sub> | <sub>Simple execution, no setup</sub> |
+| <sub>**Node REPL**</sub> | <sub>Type `node` in terminal</sub> | <sub>Interactive session, instant feedback</sub> |
+| <sub>**Direct execution**</sub> | <sub>`node filename.js`</sub> | <sub>Traditional execution</sub> |
+| <sub>**Browser**</sub> | <sub>Open HTML files directly</sub> | <sub>React demos without server</sub> |
 
 ## ⚡ Code Runner Features
 
