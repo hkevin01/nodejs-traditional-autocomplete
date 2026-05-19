@@ -161,48 +161,48 @@ sequenceDiagram
 
 ### Core Runtime & Languages
 
-| Technology | Version | Purpose | Mathematical Foundation |
+| <sub>Technology</sub> | <sub>Version</sub> | <sub>Purpose</sub> | <sub>Mathematical Foundation</sub> |
 |------------|---------|---------|------------------------|
-| **Node.js** | 22.x LTS | JavaScript runtime environment | V8 Engine: JIT compilation O(1) property access |
-| **TypeScript** | 5.7.x | Type-safe JavaScript superset | Hindley-Milner type system + structural typing |
-| **JavaScript** | ES2024 | Primary programming language | ECMAScript specification compliance |
+| <sub>**Node.js**</sub> | <sub>22.x LTS</sub> | <sub>JavaScript runtime environment</sub> | <sub>V8 Engine: JIT compilation O(1) property access</sub> |
+| <sub>**TypeScript**</sub> | <sub>5.7.x</sub> | <sub>Type-safe JavaScript superset</sub> | <sub>Hindley-Milner type system + structural typing</sub> |
+| <sub>**JavaScript**</sub> | <sub>ES2024</sub> | <sub>Primary programming language</sub> | <sub>ECMAScript specification compliance</sub> |
 
 ### Language Servers & Analysis
 
-| Server | Purpose | Algorithm | Implementation Detail | Measured Impact |
+| <sub>Server</sub> | <sub>Purpose</sub> | <sub>Algorithm</sub> | <sub>Implementation Detail</sub> | <sub>Measured Impact</sub> |
 |--------|---------|-----------|---------------------|-----------------|
-| **TypeScript LSP** | Primary IntelliSense engine | **Bidirectional type inference**: Bottom-up (expression → type) + Top-down (context → constraint) | Uses control flow analysis, path-sensitive typing, and union type narrowing | 96% accuracy on typed codebases, <50ms response |
-| **ESLint LSP** | Code quality analysis | **AST traversal**: Visitor pattern O(n) where n = AST nodes | Rule engine with configurable severity levels and auto-fix capabilities | Catches 94% of common bugs before runtime |
-| **CSS LSP** | Style completions | **Property validation**: Trie-based O(log n) lookup for CSS properties | Supports CSS3, SCSS, Less with vendor prefix completion | 100% CSS spec compliance |
-| **HTML LSP** | Markup validation | **DOM validation**: Schema-based validation against HTML5 spec | Tag completion, attribute validation, accessibility hints | Reduces markup errors by 85% |
-| **JSON LSP** | Schema validation | **JSON Schema**: Draft 7 compliance with $ref resolution | Real-time validation with IntelliSense for schema-based files | 99% schema validation accuracy |
+| <sub>**TypeScript LSP**</sub> | <sub>Primary IntelliSense engine</sub> | <sub>**Bidirectional type inference**: Bottom-up (expression → type) + Top-down (context → constraint)</sub> | <sub>Uses control flow analysis, path-sensitive typing, and union type narrowing</sub> | <sub>96% accuracy on typed codebases, <50ms response</sub> |
+| <sub>**ESLint LSP**</sub> | <sub>Code quality analysis</sub> | <sub>**AST traversal**: Visitor pattern O(n) where n = AST nodes</sub> | <sub>Rule engine with configurable severity levels and auto-fix capabilities</sub> | <sub>Catches 94% of common bugs before runtime</sub> |
+| <sub>**CSS LSP**</sub> | <sub>Style completions</sub> | <sub>**Property validation**: Trie-based O(log n) lookup for CSS properties</sub> | <sub>Supports CSS3, SCSS, Less with vendor prefix completion</sub> | <sub>100% CSS spec compliance</sub> |
+| <sub>**HTML LSP**</sub> | <sub>Markup validation</sub> | <sub>**DOM validation**: Schema-based validation against HTML5 spec</sub> | <sub>Tag completion, attribute validation, accessibility hints</sub> | <sub>Reduces markup errors by 85%</sub> |
+| <sub>**JSON LSP**</sub> | <sub>Schema validation</sub> | <sub>**JSON Schema**: Draft 7 compliance with $ref resolution</sub> | <sub>Real-time validation with IntelliSense for schema-based files</sub> | <sub>99% schema validation accuracy</sub> |
 
 ### Frontend Stack
 
-| Package | Version | Purpose | Why Chosen | Mathematical Basis |
+| <sub>Package</sub> | <sub>Version</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Mathematical Basis</sub> |
 |---------|---------|---------|------------|-------------------|
-| **React** | 19.x | UI component library | **Virtual DOM diffing**: O(n) reconciliation algorithm | React Fiber: Time-slicing with priority queues |
-| **Next.js** | 15.x | React framework with SSR/SSG | **Automatic code splitting**: Graph-based dependency analysis | Webpack module federation + dynamic imports |
-| **Tailwind CSS** | 4.x | Utility-first CSS framework | **JIT compilation**: On-demand class generation | Purging algorithm: Set intersection O(n) |
-| **Radix UI** | latest | Accessible UI primitives | **WAI-ARIA compliance**: Accessibility tree construction | Focus management via roving tabindex |
+| <sub>**React**</sub> | <sub>19.x</sub> | <sub>UI component library</sub> | <sub>**Virtual DOM diffing**: O(n) reconciliation algorithm</sub> | <sub>React Fiber: Time-slicing with priority queues</sub> |
+| <sub>**Next.js**</sub> | <sub>15.x</sub> | <sub>React framework with SSR/SSG</sub> | <sub>**Automatic code splitting**: Graph-based dependency analysis</sub> | <sub>Webpack module federation + dynamic imports</sub> |
+| <sub>**Tailwind CSS**</sub> | <sub>4.x</sub> | <sub>Utility-first CSS framework</sub> | <sub>**JIT compilation**: On-demand class generation</sub> | <sub>Purging algorithm: Set intersection O(n)</sub> |
+| <sub>**Radix UI**</sub> | <sub>latest</sub> | <sub>Accessible UI primitives</sub> | <sub>**WAI-ARIA compliance**: Accessibility tree construction</sub> | <sub>Focus management via roving tabindex</sub> |
 
 ### Backend Stack
 
-| Package | Version | Purpose | Algorithm Detail | Performance Metric |
+| <sub>Package</sub> | <sub>Version</sub> | <sub>Purpose</sub> | <sub>Algorithm Detail</sub> | <sub>Performance Metric</sub> |
 |---------|---------|---------|------------------|-------------------|
-| **Express** | 5.x | Web application framework | **Middleware pipeline**: Function composition with error handling | ~15,000 req/sec on commodity hardware |
-| **Prisma** | 6.x | Database ORM | **Query optimization**: SQL generation with prepared statements | 40% faster than raw SQL for complex queries |
-| **PostgreSQL** | 16.x | Primary database | **B+ tree indexing**: O(log n) lookups with MVCC | 99.9% uptime, ACID compliance |
-| **Redis** | latest | Caching layer | **LRU eviction**: Doubly linked list + hash table O(1) | 80% cache hit rate typical |
+| <sub>**Express**</sub> | <sub>5.x</sub> | <sub>Web application framework</sub> | <sub>**Middleware pipeline**: Function composition with error handling</sub> | <sub>~15,000 req/sec on commodity hardware</sub> |
+| <sub>**Prisma**</sub> | <sub>6.x</sub> | <sub>Database ORM</sub> | <sub>**Query optimization**: SQL generation with prepared statements</sub> | <sub>40% faster than raw SQL for complex queries</sub> |
+| <sub>**PostgreSQL**</sub> | <sub>16.x</sub> | <sub>Primary database</sub> | <sub>**B+ tree indexing**: O(log n) lookups with MVCC</sub> | <sub>99.9% uptime, ACID compliance</sub> |
+| <sub>**Redis**</sub> | <sub>latest</sub> | <sub>Caching layer</sub> | <sub>**LRU eviction**: Doubly linked list + hash table O(1)</sub> | <sub>80% cache hit rate typical</sub> |
 
 ### Development Tools
 
-| Tool | Version | Purpose | Implementation | Measured Benefit |
+| <sub>Tool</sub> | <sub>Version</sub> | <sub>Purpose</sub> | <sub>Implementation</sub> | <sub>Measured Benefit</sub> |
 |------|---------|---------|----------------|------------------|
-| **pnpm** | 9.x | Package manager | **Content-addressable storage**: Hard links reduce disk usage | 2-3x faster than npm, 70% disk space savings |
-| **Turbo** | 2.x | Monorepo build system | **Task graph**: Topological sort with caching | 85% build time reduction via caching |
-| **Vitest** | 2.x | Unit testing | **ESM-first**: Native ES modules without transpilation | 10x faster than Jest for TypeScript |
-| **Playwright** | 1.x | E2E testing | **Browser automation**: CDP (Chrome DevTools Protocol) | 99% test reliability across browsers |
+| <sub>**pnpm**</sub> | <sub>9.x</sub> | <sub>Package manager</sub> | <sub>**Content-addressable storage**: Hard links reduce disk usage</sub> | <sub>2-3x faster than npm, 70% disk space savings</sub> |
+| <sub>**Turbo**</sub> | <sub>2.x</sub> | <sub>Monorepo build system</sub> | <sub>**Task graph**: Topological sort with caching</sub> | <sub>85% build time reduction via caching</sub> |
+| <sub>**Vitest**</sub> | <sub>2.x</sub> | <sub>Unit testing</sub> | <sub>**ESM-first**: Native ES modules without transpilation</sub> | <sub>10x faster than Jest for TypeScript</sub> |
+| <sub>**Playwright**</sub> | <sub>1.x</sub> | <sub>E2E testing</sub> | <sub>**Browser automation**: CDP (Chrome DevTools Protocol)</sub> | <sub>99% test reliability across browsers</sub> |
 
 ---
 
@@ -224,16 +224,16 @@ sequenceDiagram
 
 ### Development Dependencies Analysis
 
-| Dependency | Size | Purpose | Why Essential |
+| <sub>Dependency</sub> | <sub>Size</sub> | <sub>Purpose</sub> | <sub>Why Essential</sub> |
 |------------|------|---------|---------------|
-| `@typescript-eslint/eslint-plugin` | 2.1MB | TypeScript-specific ESLint rules | Catches type-related errors ESLint can't detect |
-| `@typescript-eslint/parser` | 1.8MB | TypeScript AST parser for ESLint | Converts TS code to ESTree format for rule processing |
-| `eslint` | 1.2MB | JavaScript/TypeScript linting | Industry standard for code quality enforcement |
-| `prettier` | 800KB | Code formatting | Eliminates formatting debates, ensures consistency |
-| `vitest` | 3.5MB | Testing framework | ESM-native, significantly faster than Jest |
-| `@playwright/test` | 45MB | E2E testing framework | Cross-browser testing with reliable automation |
-| `turbo` | 15MB | Build system | Intelligent caching reduces build times by 85% |
-| `lint-staged` | 200KB | Pre-commit hooks | Only lint changed files, faster CI/CD |
+| <sub>`@typescript-eslint/eslint-plugin`</sub> | <sub>2.1MB</sub> | <sub>TypeScript-specific ESLint rules</sub> | <sub>Catches type-related errors ESLint can't detect</sub> |
+| <sub>`@typescript-eslint/parser`</sub> | <sub>1.8MB</sub> | <sub>TypeScript AST parser for ESLint</sub> | <sub>Converts TS code to ESTree format for rule processing</sub> |
+| <sub>`eslint`</sub> | <sub>1.2MB</sub> | <sub>JavaScript/TypeScript linting</sub> | <sub>Industry standard for code quality enforcement</sub> |
+| <sub>`prettier`</sub> | <sub>800KB</sub> | <sub>Code formatting</sub> | <sub>Eliminates formatting debates, ensures consistency</sub> |
+| <sub>`vitest`</sub> | <sub>3.5MB</sub> | <sub>Testing framework</sub> | <sub>ESM-native, significantly faster than Jest</sub> |
+| <sub>`@playwright/test`</sub> | <sub>45MB</sub> | <sub>E2E testing framework</sub> | <sub>Cross-browser testing with reliable automation</sub> |
+| <sub>`turbo`</sub> | <sub>15MB</sub> | <sub>Build system</sub> | <sub>Intelligent caching reduces build times by 85%</sub> |
+| <sub>`lint-staged`</sub> | <sub>200KB</sub> | <sub>Pre-commit hooks</sub> | <sub>Only lint changed files, faster CI/CD</sub> |
 
 ### TypeScript Language Server Deep Dive
 
@@ -372,13 +372,13 @@ The project is explicitly configured to **disable all AI coding assistance**:
 
 ### Language Server Protocol Details
 
-| LSP | Port/Socket | Purpose | Configuration |
+| <sub>LSP</sub> | <sub>Port/Socket</sub> | <sub>Purpose</sub> | <sub>Configuration</sub> |
 |-----|-------------|---------|---------------|
-| **tsserver** | IPC | TypeScript/JavaScript analysis | Via TypeScript extension |
-| **vscode-eslint** | IPC | ESLint integration | Via ESLint extension |
-| **vscode-css-languageserver** | IPC | CSS/SCSS/Less support | Built into VSCode |
-| **vscode-html-languageserver** | IPC | HTML support | Built into VSCode |
-| **vscode-json-languageserver** | IPC | JSON schema validation | Built into VSCode |
+| <sub>**tsserver**</sub> | <sub>IPC</sub> | <sub>TypeScript/JavaScript analysis</sub> | <sub>Via TypeScript extension</sub> |
+| <sub>**vscode-eslint**</sub> | <sub>IPC</sub> | <sub>ESLint integration</sub> | <sub>Via ESLint extension</sub> |
+| <sub>**vscode-css-languageserver**</sub> | <sub>IPC</sub> | <sub>CSS/SCSS/Less support</sub> | <sub>Built into VSCode</sub> |
+| <sub>**vscode-html-languageserver**</sub> | <sub>IPC</sub> | <sub>HTML support</sub> | <sub>Built into VSCode</sub> |
+| <sub>**vscode-json-languageserver**</sub> | <sub>IPC</sub> | <sub>JSON schema validation</sub> | <sub>Built into VSCode</sub> |
 
 ---
 
@@ -425,14 +425,14 @@ flowchart LR
 
 ### Traditional Autocomplete Features
 
-| Feature | Source | Algorithm | Performance |
+| <sub>Feature</sub> | <sub>Source</sub> | <sub>Algorithm</sub> | <sub>Performance</sub> |
 |---------|--------|-----------|-------------|
-| **Auto-completion** | TypeScript LSP | Context-aware symbol lookup | <50ms response |
-| **Parameter hints** | Function signatures | Type system analysis | Real-time |
-| **Import suggestions** | Module resolution | Dependency graph traversal | <100ms |
-| **Type hovering** | Static analysis | Symbol table lookup | <20ms |
-| **Error squiggles** | TypeScript compiler | Incremental checking | Real-time |
-| **Refactoring** | AST manipulation | Safe transformation rules | <200ms |
+| <sub>**Auto-completion**</sub> | <sub>TypeScript LSP</sub> | <sub>Context-aware symbol lookup</sub> | <sub><50ms response</sub> |
+| <sub>**Parameter hints**</sub> | <sub>Function signatures</sub> | <sub>Type system analysis</sub> | <sub>Real-time</sub> |
+| <sub>**Import suggestions**</sub> | <sub>Module resolution</sub> | <sub>Dependency graph traversal</sub> | <sub><100ms</sub> |
+| <sub>**Type hovering**</sub> | <sub>Static analysis</sub> | <sub>Symbol table lookup</sub> | <sub><20ms</sub> |
+| <sub>**Error squiggles**</sub> | <sub>TypeScript compiler</sub> | <sub>Incremental checking</sub> | <sub>Real-time</sub> |
+| <sub>**Refactoring**</sub> | <sub>AST manipulation</sub> | <sub>Safe transformation rules</sub> | <sub><200ms</sub> |
 
 ### Commands
 
@@ -476,12 +476,12 @@ pnpm test-autocomplete  # Test completion features
 
 ### Performance Testing
 
-| Metric | Target | Measurement Method | Current Status |
+| <sub>Metric</sub> | <sub>Target</sub> | <sub>Measurement Method</sub> | <sub>Current Status</sub> |
 |--------|--------|--------------------|---------------|
-| **Completion latency** | <50ms | VSCode developer tools | ✅ 35ms avg |
-| **Memory usage** | <300MB | Task Manager/htop | ✅ 245MB avg |
-| **CPU usage** | <15% | System monitor | ✅ 12% avg |
-| **Startup time** | <5s | Time to first completion | ✅ 3.2s avg |
+| <sub>**Completion latency**</sub> | <sub><50ms</sub> | <sub>VSCode developer tools</sub> | <sub>✅ 35ms avg</sub> |
+| <sub>**Memory usage**</sub> | <sub><300MB</sub> | <sub>Task Manager/htop</sub> | <sub>✅ 245MB avg</sub> |
+| <sub>**CPU usage**</sub> | <sub><15%</sub> | <sub>System monitor</sub> | <sub>✅ 12% avg</sub> |
+| <sub>**Startup time**</sub> | <sub><5s</sub> | <sub>Time to first completion</sub> | <sub>✅ 3.2s avg</sub> |
 
 ### Test Suite
 
@@ -512,13 +512,13 @@ pnpm test:performance       # Benchmark completion speed
 
 ### Quality Gates
 
-| Gate | Tool | Threshold | Action |
+| <sub>Gate</sub> | <sub>Tool</sub> | <sub>Threshold</sub> | <sub>Action</sub> |
 |------|------|-----------|--------|
-| **Type Safety** | TypeScript | 0 errors | Build fails |
-| **Code Quality** | ESLint | 0 errors, <10 warnings | CI/CD gate |
-| **Test Coverage** | Vitest | >90% | PR blocks |
-| **Performance** | Custom | <50ms completions | Performance alert |
-| **Bundle Size** | Webpack Analyzer | <2MB initial | Optimization required |
+| <sub>**Type Safety**</sub> | <sub>TypeScript</sub> | <sub>0 errors</sub> | <sub>Build fails</sub> |
+| <sub>**Code Quality**</sub> | <sub>ESLint</sub> | <sub>0 errors, <10 warnings</sub> | <sub>CI/CD gate</sub> |
+| <sub>**Test Coverage**</sub> | <sub>Vitest</sub> | <sub>>90%</sub> | <sub>PR blocks</sub> |
+| <sub>**Performance**</sub> | <sub>Custom</sub> | <sub><50ms completions</sub> | <sub>Performance alert</sub> |
+| <sub>**Bundle Size**</sub> | <sub>Webpack Analyzer</sub> | <sub><2MB initial</sub> | <sub>Optimization required</sub> |
 
 ---
 
@@ -554,4 +554,3 @@ pnpm test:performance       # Benchmark completion speed
 ✅ **Documentation**: Mathematical foundations, architecture diagrams, usage guides  
 
 **🎯 Mission Accomplished**: Providing intelligent code completion and developer productivity tools through traditional static analysis, without relying on AI-powered services.
-
